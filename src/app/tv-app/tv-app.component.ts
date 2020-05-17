@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITvapp } from '../itvapp';
+import { TvService } from '../tv.service';
 
 @Component({
   selector: 'app-tv-app',
@@ -8,21 +9,13 @@ import { ITvapp } from '../itvapp';
 })
 export class TvAppComponent implements OnInit {
   current: ITvapp
-  constructor() {
-    this.current = {
-      show: 'Panchayat',
-      cast: 'Neena Gupta',
-      rating: 'four star',
-      episodes: 8,
-      seasons: 1,
-      description: 'Simple narration and storyline',
-      image: ''
-
-    }
+  constructor(private tvappservice: TvService) {
 
    }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
+   this.tvappservice.getTvapp('westworld').subscribe(data => this.current = data)
   }
 
 }
+

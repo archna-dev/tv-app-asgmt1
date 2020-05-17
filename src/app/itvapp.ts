@@ -1,11 +1,10 @@
 export interface ITvapp {
 
-show: string
-cast: string
-rating: string
-seasons: number
-episodes: number
+name: string
+rating: number
+genres: string
 image: string
 description: string
+runtime: number
 
 }
