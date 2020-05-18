@@ -5,15 +5,10 @@ import { ITvapp } from './itvapp';
 import {map} from 'rxjs/operators';
 
 interface ITvdata{
-  name: string,
+
+    name: string
   genres: string,
   runtime: number,
-  rating:{
-      average: number
-    },
-  image: {
-    medium: string
-  },
   summary: string
   }
 
@@ -26,7 +21,7 @@ export class TvService {
 
   getTvapp(name: string){
    return this.httpClient.get<ITvdata>(
-     `${environment.baseUrl}/api.tvmaze.com/search/shows?q=${name}&appid=${environment.appId}`).pipe(
+     `${environment.baseUrl}/api.tvmaze.com/singlesearch/shows?q=${name}&appid=${environment.appId}`).pipe(
        map(data => this.transformToITvapp(data))
      )
 
@@ -35,11 +30,9 @@ export class TvService {
   transformToITvapp(data: ITvdata) : ITvapp {
     return {
       name: data.name,
-      rating:data.rating.average,
-      description: data.summary,
-      genres: data.genres,
+      summary: data.summary,
       runtime: data.runtime,
-      image: data.image.medium
+
 
     }
   }
