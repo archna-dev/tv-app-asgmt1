@@ -4,10 +4,17 @@
       <img [src] = 'current.image' />
     </div>
 
-   <span>Title<br><h3>{{current.name}}</h3></span></div><br/>
-
+   <span><h2>{{current.name}}</h2></span></div><br/>
+    About the Show<br>
     <span>{{current.summary}}</span><br>
-       <span>{{current.runtime}}</span>
+    Ratings:
+    <span>{{current.rating}}</span><br>
+
+    <span>Season: {{current.season}} | Episode: {{current.episodes}}</span><br>
+    Length of the show:
+       <span>{{current.runtime}}</span> <br>
+       <span>{{current.schedule}}</span> |
+       <span>{{current.time}}</span>
 
 
 
