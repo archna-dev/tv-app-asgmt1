@@ -6,7 +6,10 @@ import {map} from 'rxjs/operators';
 
 interface ITvdata{
 
-    name: string
+  name: string
+  image: {
+    medium: string
+  },
   genres: string,
   runtime: number,
   summary: string
@@ -29,6 +32,7 @@ export class TvService {
 
   transformToITvapp(data: ITvdata) : ITvapp {
     return {
+      image: data.image.medium,
       name: data.name,
       summary: data.summary,
       runtime: data.runtime,
