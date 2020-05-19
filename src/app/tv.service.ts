@@ -73,7 +73,7 @@ export class TvService {
     return {
       image: data.image.medium,
       name: data.name,
-      summary: data.summary,
+      summary: data.summary.replace(/<[^>]*>/g, ''),
       runtime: data.runtime,
       genres: data.genres,
       rating: data.rating.average,
@@ -88,7 +88,7 @@ export class TvService {
     return {
       image: data.image.medium,
       name: data.name,
-      summary: data.summary,
+      summary: data.summary.replace(/<[^>]*>/g, ''),
       runtime: data.runtime,
       genres: data.genres,
       rating: data.rating.average,
