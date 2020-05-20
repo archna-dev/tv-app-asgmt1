@@ -6,8 +6,15 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
 </head>
-<body>
+<body ng-app="starApp">
+  <div ng-controller="StarCtrl"> <span ng-repeat="rating in ratings">{{rating.current}} out of
+          {{rating.max}}
+      <div star-rating rating-value="rating.current" max="rating.max" ></div>
+      </span>
+
+  </div>
   <app-root></app-root>
 </body>
 </html>
