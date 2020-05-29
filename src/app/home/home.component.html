@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAV TV Application</title>
+<link rel="stylesheet" href="bootstrap-min-css">
+<link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+<div class="main-container">
+  <div class="topnav">
+	<div class="logo">
+	<img src="assets/images/logo1.png">
+		<h1>KAV</h1>
+
+	</div>
+	   <div class="login-container">
+      <form action=" ">
+        <button type="submit">REGISTER</button>
+        <button type="submit">SIGN IN</button>
+      </form>
+	  </div>
+	<div id="navlist">
+	<ul>
+	<li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/shows" routerLinkActive="active">Shows</a></li>
+    <li><a routerLink="/people" routerLinkActive="active">People</a></li>
+    <li><a routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
+	</ul>
+	</div>
+  </div>
+
+  <app-tv-app></app-tv-app>
+
+  <div class="container" style="text-align:center">
+	<img src="assets/images/home_image.png">
+  </div>
+</div>
+
+<app-footer></app-footer>
+<!--<div class="footer">
+	<h4>@copyright of KAV TV Application with more content of footer	</h4>
+</div>
+  <div style = "text-align: center;">
+    <br>-->
+    <router-outlet></router-outlet>
+  </div>
+
+</body>
+</html>

@@ -15,7 +15,7 @@ export class TvAppComponent implements OnInit {
 
   ngOnInit(): void{
    //this.tvappservice.getTvapp('westworld').subscribe(data => this.current = data)
-   this.tvappservice.getTvappcast('westworld').subscribe(data => this.current = data)
+   this.tvappservice.getTvappcast('siren').subscribe(data => this.current = data)
   }
 }
 
