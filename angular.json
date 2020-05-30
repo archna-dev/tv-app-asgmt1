@@ -28,8 +28,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "./CSS/bootstrap.min.css",
-               "./CSS/tvappstyle.css"
+              
             ]
           },
           "configurations": {

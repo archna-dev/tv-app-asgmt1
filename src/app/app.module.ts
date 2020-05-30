@@ -17,6 +17,7 @@ import { FlexLayoutModule } from '@angular/flex-Layout';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     TvAppComponent,
     TvShowSearchComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    
 
 
 
