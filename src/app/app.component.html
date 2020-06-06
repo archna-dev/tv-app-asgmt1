@@ -1,19 +1,22 @@
 <div style="text-align: center;">
-
 <div>
   <app-header></app-header>
-</div><br>
-<div>
-  <br>
-<app-tv-show-search></app-tv-show-search>
 </div>
-<app-tv-app></app-tv-app>
-<app-home></app-home>
+<br>
+<div style="text-align: center;">
+<app-tv-show-search (searchEvent)="doSearch($event)"></app-tv-show-search>
+</div>
+<div>
+  <app-tv-app [current] = "tvapp"></app-tv-app>
+</div>
+
+<router-outlet></router-outlet>
+
 <app-footer></app-footer>
 </div>
 <div fxLayoutAlign="center">
 <div fxLayout = "row">
-  <div fvFlex="300px"></div>
+
 </div>
 </div>
 

@@ -1,16 +1,4 @@
-.search-container
-{
-  width:84%;
-  text-align: left;
-  margin-left:8%;
-  position: relative;
-  margin-bottom:20px;
-}
 
-.search-container .image{
-  float:left;
-  padding-right:20px;
-}
 
 .search-container .search-output{
 float:right;

@@ -1,17 +1,18 @@
-
+<div *ngIf="current">
   <div class="search-container">
     <div class="row">
-   <div class="image">
-    <img [src] = 'current.image' />
-    </div>
-    <div class="search-otput">
+      <div class="image">
+       <img [src] = 'current.image' /><br>
+      </div>
+    <div class="search-output">
    <span><h2>{{current.name}}</h2></span><br/>
-    About the Show<br/>
-    <span>{{current.summary}}</span><br>
+    <div>
+    <span>{{current.summary}}</span>
+    </div><br>
     Ratings:
     <span>{{current.rating}}</span><br>
-    Cast:
-    <span> {{current.cast}} </span>
+   <!---- Cast:`
+    <span> {{current.cast}} </span>-->
     <p>
     <span>Season: {{current.season}} | Episode: {{current.episodes}}</span><br>
       Length of the show:
@@ -22,7 +23,7 @@
 </div>
     </div>
   <div>
-
+</div>
 
 
 

@@ -1,0 +1,19 @@
+.search-container
+{
+  width:100%;
+  text-align: left;
+  margin-left:8%;
+  position: relative;
+  margin-bottom:20px;
+}
+
+.search-container .image{
+  float:left;
+  padding-right:20px;
+}
+.mat-form-field {
+  width:84%;
+  display: none;
+  text-align: left;
+
+}
