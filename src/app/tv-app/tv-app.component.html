@@ -1,30 +1,34 @@
 <div *ngIf="current">
   <div class="search-container">
     <div class="row">
-      <div class="image">
-       <img [src] = 'current.image' /><br>
+      <div class="image"><img [src]="current.image" /><br /></div>
+      <div class="search-output">
+        <span
+          ><h2>{{ current.name }}</h2></span
+        ><br />
+        <div>
+          <span>{{ current.summary }}</span>
+        </div>
+        <br />
+        Ratings:
+        <span>{{ current.rating }}</span>
+        <div>
+          <br />
+          Cast:
+          <span> {{ current.cast }} </span>
+        </div>
+        <p>
+          <span
+            >Season: {{ current.season }} | Episode:
+            {{ current.episodes }}</span
+          ><br />
+          Length of the show:
+          <span>{{ current.runtime }}</span> min.<br />
+          <span>{{ current.schedule }}</span> | <span>{{ current.time }}</span>
+          <br />
+        </p>
       </div>
-    <div class="search-output">
-   <span><h2>{{current.name}}</h2></span><br/>
-    <div>
-    <span>{{current.summary}}</span>
-    </div><br>
-    Ratings:
-    <span>{{current.rating}}</span><br>
-   <!---- Cast:`
-    <span> {{current.cast}} </span>-->
-    <p>
-    <span>Season: {{current.season}} | Episode: {{current.episodes}}</span><br>
-      Length of the show:
-       <span>{{current.runtime}}</span> min.<br>
-       <span>{{current.schedule}}</span> |
-       <span>{{current.time}}</span> <br>
-    </p>
-</div>
     </div>
-  <div>
+    <div></div>
+  </div>
 </div>
-
-
-
-
